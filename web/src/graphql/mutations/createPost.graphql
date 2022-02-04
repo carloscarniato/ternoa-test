@@ -1,0 +1,11 @@
+mutation CreatePost($image: Upload, $input: PostInput!) {
+  createPost(image: $image, input: $input) {
+    id
+    createdAt
+    updateAt
+    title
+    text
+    points
+    creatorId
+  }
+}
