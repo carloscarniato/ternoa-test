@@ -48,7 +48,7 @@ export default function ConnectButton() {
     </Flex>
   ) : (
     <Button mr={4} colorScheme="purple" onClick={handleConnectWallet}>
-      Connect to a wallet
+      Connect to MetaMask
     </Button>
   );
 }
