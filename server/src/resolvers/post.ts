@@ -174,7 +174,7 @@ export class PostResolver {
             await post.save();
             resolve(true);
           })
-          .on("error", (err) => {
+          .on("error", () => {
             resolve(false);
           })
       );
@@ -217,7 +217,7 @@ export class PostResolver {
             await Post.save(result.raw[0]);
             resolve(true);
           })
-          .on("error", (err) => {
+          .on("error", () => {
             resolve(false);
           })
       );

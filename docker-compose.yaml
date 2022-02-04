@@ -6,7 +6,6 @@ services:
     restart: on-failure
     image: backend
     volumes:
-      - ./server/dist/:/usr/src/app/dist/
       - ./server/src/:/usr/src/app/src/
       - ./server/public/images/:/usr/src/app/public/images
     ports:
